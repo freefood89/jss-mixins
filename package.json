@@ -1,13 +1,12 @@
 {
   "name": "@cybernetex/jss-mixins",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "main": "lib/index.js",
   "scripts": {
     "build": "PATH=$(npm bin):$PATH babel src -d lib",
     "prepublish": "npm run build",
     "postpublish": "rm -r lib",
-    "test:watch": "PATH=$(npm bin):$PATH nodemon --exec 'jasmine --config=spec/support/jasmine.json'",
-    "test": "jasmine --config=spec/support/jasmine.json"
+    "test": "$(npm bin)/mocha --require @babel/register --require test/helpers/jsdom.js"
   },
   "author": "freefood89",
   "license": "Apache-2.0",
@@ -20,9 +19,11 @@
     "color": "^3.1.0",
     "common-tags": "^1.8.0",
     "jasmine": "^3.3.0",
+    "jasmine-es6": "^0.4.3",
     "jsdom": "^13.0.0",
     "jss": "^9.8.7",
     "jss-preset-default": "^4.5.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.5",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
