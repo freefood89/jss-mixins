@@ -1,7 +1,7 @@
 {
   "name": "@cybernetex/jss-mixins",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.2",
+  "main": "lib/index.js",
   "scripts": {
     "build": "PATH=$(npm bin):$PATH babel src -d lib",
     "prepublish": "npm run build",
