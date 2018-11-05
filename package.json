@@ -1,0 +1,45 @@
+{
+  "name": "@cybernetex/jss-mixins",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "PATH=$(npm bin):$PATH babel src -d lib",
+    "prepublish": "npm run build",
+    "postpublish": "rm -r lib",
+    "test:watch": "PATH=$(npm bin):$PATH nodemon --exec 'jasmine --config=spec/support/jasmine.json'",
+    "test": "jasmine --config=spec/support/jasmine.json"
+  },
+  "author": "freefood89",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "color": "^3.1.0",
+    "common-tags": "^1.8.0",
+    "jasmine": "^3.3.0",
+    "jsdom": "^13.0.0",
+    "jss": "^9.8.7",
+    "jss-preset-default": "^4.5.0",
+    "nodemon": "^1.18.5",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-jss": "^8.6.1"
+  },
+  "dependencies": {
+    "@babel/node": "^7.0.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freefood89/jss-mixins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freefood89/jss-mixins/issues"
+  },
+  "homepage": "https://github.com/freefood89/jss-mixins#readme",
+  "description": ""
+}
