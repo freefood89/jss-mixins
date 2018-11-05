@@ -10,7 +10,7 @@
     "test": "jasmine --config=spec/support/jasmine.json"
   },
   "author": "freefood89",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
@@ -39,5 +39,6 @@
     "url": "https://github.com/freefood89/jss-mixins/issues"
   },
   "homepage": "https://github.com/freefood89/jss-mixins#readme",
+  "dependencies": {},
   "description": ""
 }
