@@ -1,6 +1,6 @@
 {
   "name": "@cybernetex/jss-mixins",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/index.js",
   "scripts": {
     "build": "PATH=$(npm bin):$PATH babel src -d lib",
