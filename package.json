@@ -1,6 +1,6 @@
 {
   "name": "@cybernetex/jss-mixins",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "lib/index.js",
   "scripts": {
     "build": "PATH=$(npm bin):$PATH babel src -d lib",
@@ -40,6 +40,8 @@
     "url": "https://github.com/freefood89/jss-mixins/issues"
   },
   "homepage": "https://github.com/freefood89/jss-mixins#readme",
-  "dependencies": {},
+  "dependencies": {
+    "event-stream": "^3.3.4"
+  },
   "description": ""
 }
